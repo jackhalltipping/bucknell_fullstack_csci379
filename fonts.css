@@ -1,16 +1,20 @@
 #libre {
   font-family: 'Libre Barcode 39 Text', cursive;
+  text-align: center;
 }
 
 #oswald {
   font-family: 'Oswald', sans-serif;
+  text-align: center;
 }
 
 #graduate {
   font-family: 'Graduate', cursive;
+  text-align: center;
 }
 
 #roboto {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
+  text-align: center;
 }
