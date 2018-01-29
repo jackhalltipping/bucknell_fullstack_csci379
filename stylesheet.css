@@ -1,0 +1,50 @@
+body {
+    background-color: #003133;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: 	#417E80;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#67989A;
+}
+
+#pic {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#67989A;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#67989A;
+}
+
+#project1 {
+  float: left;
+    width: 33.33%;
+}
+
+#project2 {
+  float: left;
+    width: 33.33%;
+}
+
+#project3 {
+  float: left;
+    width: 33.33%;
+}
