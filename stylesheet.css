@@ -24,21 +24,6 @@ body {
     color: 	#417E80;
 }
 
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  text-align: center;
-  color: 	#67989A;
-  text-decoration: underline;
-}
-
-#pic {
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -53,6 +38,19 @@ h2 {
   color: 	#67989A;
 }
 
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#67989A;
+  text-decoration: underline;
+}
+
+#pic {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #project1 {
   float: left;
