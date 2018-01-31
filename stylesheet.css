@@ -29,6 +29,7 @@ h3 {
   font-weight: 400;
   text-align: center;
   color: 	#67989A;
+  text-decoration: underline;
 }
 
 #pic {
@@ -52,6 +53,7 @@ h2 {
   color: 	#67989A;
 }
 
+
 #project1 {
   float: left;
     width: 33.33%;
@@ -65,4 +67,10 @@ h2 {
 #project3 {
   float: left;
     width: 33.33%;
+}
+
+.columns:after {
+    content: "";
+    display: table;
+    clear: both;
 }
