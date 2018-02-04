@@ -1,5 +1,7 @@
 /*
 
+ASSUMING WE ARE ON A MOBILE (<767px), OTHERWISE USE MEDIA TO CHANGE TO TABLET OR DESKTOP
+
 Portfolio color scheme:
 
 From lighter to darker, sort of greenish blue color
@@ -43,7 +45,6 @@ h3 {
   font-weight: 400;
   text-align: center;
   color: 	#67989A;
-  text-decoration: underline;
 }
 
 #pic {
@@ -52,7 +53,7 @@ h3 {
       max-height:150px;
       width: auto;
       height: auto;
-    float: left;
+    float: right;
         width: 50%;
 }
 
@@ -61,29 +62,39 @@ h3 {
     width: 50%;
 }
 
+#course {
+  border-style: solid;
+  border-color: #67989A;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+#additional {
+  border-style: solid;
+  border-color: #67989A;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
 .top:after {
     content: "";
     display: table;
     clear: both;
 }
 
-#project1 {
-  float: left;
-    width: 33.33%;
+.column {
+  border-style: solid;
+  border-color: #67989A;
+  margin: 15px;
+  padding-bottom: 15px;
 }
 
-#project2 {
-  float: left;
-    width: 33.33%;
+@media (min-width: 768px) and (max-width: 991px){
+/* if on a tablet */
+
 }
 
-#project3 {
-  float: left;
-    width: 33.33%;
-}
+@@media (mid-width: 992px) {
+/* if on a desktop */
 
-.columns:after {
-    content: "";
-    display: table;
-    clear: both;
 }
