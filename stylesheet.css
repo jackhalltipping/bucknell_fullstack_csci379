@@ -22,7 +22,7 @@ body {
     background-color: #003133;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     color: 	#417E80;
 }
 
@@ -92,12 +92,19 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px){
 /* if on a tablet */
 
+  #pic {
+    max-width:150px;
+    max-height:280px;
+  }
+
   #project1 {
+    text-align: left;
     float: left;
       width: 50%;
   }
 
   #project2 {
+    text-align: right;
     float: left;
       width: 50%;
   }
@@ -109,13 +116,31 @@ h3 {
   }
 
   #project3 {
-
+    text-align: center;
   }
+
 
 }
 
 @media (min-width: 992px) {
 /* if on a desktop */
+
+  #pic {
+    max-width:150px;
+    max-height:280px;
+  }
+
+  #project1 {
+    text-align: left;
+  }
+
+  #project2 {
+    text-align: center;
+  }
+
+  #project3 {
+    text-align: right;
+  }
 
   .column {
     float: left;
