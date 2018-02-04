@@ -121,6 +121,7 @@ h3 {
 
 @media (min-width: 992px) {
 /* if on a desktop */
+
   .column {
     margin: 10px;
   }
