@@ -97,7 +97,7 @@ h3 {
     max-height:280px;
   }
 
-  .row {
+  .tablet {
     display: flex;
   }
 
@@ -122,16 +122,17 @@ h3 {
 @media (min-width: 992px) {
 /* if on a desktop */
 
-  .column {
-    margin: 10px;
-  }
-  .row {
-    width: auto;
-  }
-
   #pic {
     max-width:150px;
     max-height:280px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
   }
 
   #project1 {
@@ -144,15 +145,6 @@ h3 {
 
   #project3 {
     text-align: right;
-  }
-
-  .column {
-    float: left;
-    width: 30.45%
-  }
-
-  .row {
-    clear: both;
   }
 
 }
