@@ -89,7 +89,7 @@ h3 {
   padding-bottom: 15px;
 }
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 /* if on a tablet */
 
   #pic {
@@ -97,28 +97,25 @@ h3 {
     max-height:280px;
   }
 
+  .row {
+    display: flex;
+  }
+
+  .column {
+    flex: 1;
+  }
+
   #project1 {
     text-align: left;
-    float: left;
-      width: 50%;
   }
 
   #project2 {
     text-align: right;
-    float: left;
-      width: 50%;
-  }
-
-  #tablet {
-    content: "";
-    display: table;
-    clear: both;
   }
 
   #project3 {
     text-align: center;
   }
-
 
 }
 
@@ -141,16 +138,4 @@ h3 {
   #project3 {
     text-align: right;
   }
-
-  .column {
-    float: left;
-    width: 33.33%;
-  }
-
-  .row {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
 }
