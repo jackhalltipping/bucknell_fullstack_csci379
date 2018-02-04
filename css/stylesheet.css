@@ -121,6 +121,12 @@ h3 {
 
 @media (min-width: 992px) {
 /* if on a desktop */
+  .column {
+    margin: 10px;
+  }
+  .row {
+    width: auto;
+  }
 
   #pic {
     max-width:150px;
@@ -141,7 +147,7 @@ h3 {
 
   .column {
     float: left;
-    width: 25%
+    width: 30.45%
   }
 
   .row {
