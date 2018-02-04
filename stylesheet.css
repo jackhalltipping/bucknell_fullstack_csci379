@@ -43,7 +43,7 @@ h2 {
 h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   color: 	#67989A;
 }
 
@@ -92,9 +92,40 @@ h3 {
 @media (min-width: 768px) and (max-width: 991px){
 /* if on a tablet */
 
+  #project1 {
+    float: left;
+      width: 50%;
+  }
+
+  #project2 {
+    float: left;
+      width: 50%;
+  }
+
+  #tablet {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  #project3 {
+
+  }
+
 }
 
-@@media (mid-width: 992px) {
+@media (min-width: 992px) {
 /* if on a desktop */
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+
+  .row {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 }
