@@ -138,4 +138,14 @@ h3 {
   #project3 {
     text-align: right;
   }
+
+  .column {
+    float: left;
+    width: 25%
+  }
+
+  .row {
+    clear: both;
+  }
+
 }
