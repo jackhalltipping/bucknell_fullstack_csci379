@@ -160,24 +160,28 @@ h4 {
     max-height:280px;
   }
 
-  .row {
-    display: flex;
-  }
-
-  .column {
-    flex: 1;
-  }
-
   #project1 {
     text-align: left;
+    float: left;
+    width: 29.645%
   }
 
   #project2 {
     text-align: center;
+    float: left;
+    width: 29.645%
   }
 
   #project3 {
     text-align: right;
+    float: left;
+    width: 29.645%
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
 }
