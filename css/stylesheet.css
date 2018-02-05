@@ -176,19 +176,19 @@ h4 {
   #project1 {
     text-align: left;
     float: left;
-    width: 29.645%
+    width: -webkit-calc(32% - 23px);
   }
 
   #project2 {
     text-align: center;
     float: left;
-    width: 29.645%
+    width: -webkit-calc(32% - 23px);
   }
 
   #project3 {
     text-align: right;
     float: left;
-    width: 29.645%
+    width: -webkit-calc(32% - 23px);
   }
 
   .row:after {
