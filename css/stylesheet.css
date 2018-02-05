@@ -135,6 +135,26 @@ h4 {
   background-color: #0D4A4D;
 }
 
+/* unvisited link */
+a:link {
+    color: lightgreen;
+}
+
+/* visited link */
+a:visited {
+    color: lightgreen;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: lightgreen;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
 /* if on a tablet */
 
