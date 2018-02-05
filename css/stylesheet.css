@@ -1,9 +1,9 @@
 /*
 
-Note that the background color on each section heading is not unique,
-this is intentional due to how I want the color scheme to be down the road
+**Commented out the standard color for project background, to make it the unique
+color as said in the rubric**
 
-ASSUMING WE ARE ON A MOBILE (<767px), OTHERWISE USE MEDIA TO CHANGE TO TABLET OR DESKTOP
+ASSUMING WE ARE ON A MOBILE (<767px), OTHERWISE USED MEDIA TO CHANGE TO TABLET OR DESKTOP
 
 Portfolio color scheme:
 
@@ -62,7 +62,20 @@ h3 {
 h4 {
   border-style: solid;
   border-color: black;
-  background-color: #022;
+  /*background-color: #022; */
+  /* commented out because of unique color restriction */
+}
+
+#title1 {
+  background-color: #330800;
+}
+
+#title2 {
+  background-color: #000000;
+}
+
+#title3 {
+  background-color: #191970;
 }
 
 #pic {
