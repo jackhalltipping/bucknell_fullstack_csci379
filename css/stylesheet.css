@@ -180,6 +180,7 @@ a:active {
 
   #project3 {
     text-align: center;
+    box-sizing: border-box;
     flex: 0 0 95.8%;
   }
 
