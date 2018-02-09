@@ -1,0 +1,156 @@
+/*
+
+**Commented out the standard color for project background, to make it the unique
+color as said in the rubric**
+
+ASSUMING WE ARE ON A MOBILE (<767px), OTHERWISE USED MEDIA TO CHANGE TO TABLET OR DESKTOP
+
+Portfolio color scheme:
+
+From lighter to darker, sort of greenish blue color
+I was originally thinking darker background and lighter text
+SUBJECT TO CHANGE, PLACEHOLDER
+
+#67989A
+#417E80
+#236467
+#0D4A4D
+#003133
+#022
+
+From http://paletton.com/palette.php?uid=13j0u0kllllaFw0g0qFqFg0w0aF
+
+*/
+
+body {
+    background-color: #67989A;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    color: 	#67989A;
+}
+
+.text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#0D4A4D;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  color: 	#0D4A4D;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: 	#67989A;
+  border-style: solid;
+  border-color: black;
+  background-color: #022;
+}
+
+h4 {
+  border-style: solid;
+  border-color: black;
+  /*background-color: #022; */
+  /* commented out because of unique color restriction */
+}
+
+#title1 {
+  background-color: #330800;
+}
+
+#title2 {
+  background-color: #000000;
+}
+
+#title3 {
+  background-color: #191970;
+}
+
+#pic {
+    border-radius: 50%;
+    display: block;
+      max-width:90px;
+      max-height:150px;
+      width: auto;
+      height: auto;
+    float: right;
+        width: 50%;
+}
+
+#me {
+  float: left;
+    width: 50%;
+}
+
+#course {
+  background-color: #0D4A4D;
+  border-style: solid;
+  border-color: black;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+#additional {
+  background-color: #0D4A4D;
+  border-style: solid;
+  border-color: black;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+.top:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+  border-style: solid;
+  border-color: black;
+  margin: 15px;
+  padding-bottom: 15px;
+}
+
+#project1 {
+  background-color: #0D4A4D;
+}
+
+#project2 {
+  background-color: #0D4A4D;
+}
+
+#project3 {
+  background-color: #0D4A4D;
+}
+
+/* unvisited link */
+a:link {
+    color: lightgreen;
+}
+
+/* visited link */
+a:visited {
+    color: lightgreen;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: lightgreen;
+}
