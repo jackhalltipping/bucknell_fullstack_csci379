@@ -143,3 +143,48 @@ a:hover {
 a:active {
     color: lightgreen;
 }
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+/* if on a tablet */
+
+  #pic {
+    max-width:150px;
+    max-height:280px;
+  }
+
+  #project1 {
+    text-align: left;
+  }
+
+  #project2 {
+    text-align: right;
+  }
+
+  #project3 {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 992px) {
+/* if on a desktop */
+
+  #pic {
+    max-width:150px;
+    max-height:280px;
+  }
+
+  #project1 {
+    text-align: left;
+  }
+
+  #project2 {
+    text-align: center;
+  }
+
+  #project3 {
+    text-align: right;
+  }
+
+}
