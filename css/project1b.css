@@ -85,13 +85,6 @@ h4 {
       max-height:150px;
       width: auto;
       height: auto;
-    float: right;
-        width: 50%;
-}
-
-#me {
-  float: left;
-    width: 50%;
 }
 
 #course {
@@ -110,28 +103,24 @@ h4 {
   padding-bottom: 15px;
 }
 
-.top:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.column {
+#project1 {
   border-style: solid;
   border-color: black;
-  margin: 15px;
   padding-bottom: 15px;
-}
-
-#project1 {
   background-color: #0D4A4D;
 }
 
 #project2 {
+  border-style: solid;
+  border-color: black;
+  padding-bottom: 15px;
   background-color: #0D4A4D;
 }
 
 #project3 {
+  border-style: solid;
+  border-color: black;
+  padding-bottom: 15px;
   background-color: #0D4A4D;
 }
 
