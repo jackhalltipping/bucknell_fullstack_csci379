@@ -124,6 +124,11 @@ h4 {
   background-color: #0D4A4D;
 }
 
+#projects {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
 /* unvisited link */
 a:link {
     color: lightgreen;
