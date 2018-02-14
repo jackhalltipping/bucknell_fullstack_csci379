@@ -98,18 +98,21 @@ h4 {
   border-style: solid;
   border-color: black;
   background-color: #0D4A4D;
+  height: 200px;
 }
 
 #project2 {
   border-style: solid;
   border-color: black;
   background-color: #0D4A4D;
+  height: 200px;
 }
 
 #project3 {
   border-style: solid;
   border-color: black;
   background-color: #0D4A4D;
+  height: 200px;
 }
 
 /* unvisited link */
@@ -143,14 +146,17 @@ a:active {
 
   #project1 {
     text-align: left;
+    height: 180px;
   }
 
   #project2 {
     text-align: right;
+    height: 180px;
   }
 
   #project3 {
     text-align: center;
+    height: 180px;
   }
 
 }
@@ -165,14 +171,17 @@ a:active {
 
   #project1 {
     text-align: left;
+    height: 150px;
   }
 
   #project2 {
     text-align: center;
+    height: 150px;
   }
 
   #project3 {
     text-align: right;
+    height: 150px;
   }
 
 }
