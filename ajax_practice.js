@@ -5,6 +5,7 @@ document.getElementById("dog_button")
 function loadAjax(event) {
   console.log(event)
   var url = "https://dog.ceo/api/breeds/list/all"
+
   console.log("making fetch to", url)
 
   fetch(url)
@@ -14,6 +15,7 @@ function loadAjax(event) {
     .then(json=>{
       console.log(json)
       document.getElementById("dog_container")
-        .textContent = json.message
+        .innerHtml = "<ol>" +
+          json.message.beagle + "<ol>"
     })
 }
