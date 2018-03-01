@@ -4,7 +4,7 @@ document.getElementById("dog_button")
 
 function loadAjax(event) {
   console.log(event)
-  var url = "https://dog.ceo/api/breeds/list/all"
+  var url = "https://dog.ceo/api/breeds/image/random"
 
   console.log("making fetch to", url)
 
@@ -15,7 +15,6 @@ function loadAjax(event) {
     .then(json=>{
       console.log(json)
       document.getElementById("dog_container")
-        .innerHtml = "<ol>" +
-          json.message.beagle + "<ol>"
+        .innerHtml = "<img src=" + json.message + ">"
     })
 }
