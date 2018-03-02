@@ -16,5 +16,7 @@ function loadAjax(event) {
       console.log(json)
       document.getElementById("dog_container")
         .innerHTML = "<img src=" + json.message + ">"
+      console.log("success!")
     })
+    .catch(console.log);
 }
