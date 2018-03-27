@@ -5,6 +5,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Results from './Results.jsx';
 
 class App extends Component {
 
@@ -19,12 +20,14 @@ class App extends Component {
   }
 
   search() {
-    return fetch('https://www.eg.bucknell.edu/~amm042/service/q?text=${this.state.text}&limit=$10')
+    return fetch("https://www.eg.bucknell.edu/~amm042/service/q?text="+ this.state.text)
     .then((response) => response.json())
-    .then((responseJson) => {
-      console.log(this.state.text)
-      console.log(responseJson)
-      return responseJson;
+    .then((response) => {
+      console.log(response)
+      return response.message;
+    })
+    .then((response) => {
+      this.setState({data:response})
     })
     .catch((error) => {
       console.error(error);
@@ -38,7 +41,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <TextField value={this.state.text} onKeyPress={this.search} onChange={this.searchUpdate} hintText="Enter Course Information"/>
+      <TextField value={this.state.text} onKeyUp={this.search} onChange={this.searchUpdate} hintText="Enter Course Information"/>
+      <Results temp={this.state.data}/>
       </div>
     );
   }
