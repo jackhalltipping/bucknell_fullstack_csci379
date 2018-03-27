@@ -24,6 +24,8 @@ class App extends Component {
     .then((response) => response.json())
     .then((response) => {
       console.log(response)
+      console.log(response.message[0].Course)
+      console.log(response.message[0].Instructor)
       return response.message;
     })
     .then((response) => {
