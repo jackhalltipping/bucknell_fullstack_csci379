@@ -28,12 +28,10 @@ class App extends Component {
     .then(jsonResponse => {
       var results = []
       for (var i = 0; i < jsonResponse["message"].length;  i += 1) {
-        results.push(jsonResponse["message"][i]["Course"] +jsonResponse["message"][i]["Title"]
-        + jsonResponse["message"][i]["Instructor"] + jsonResponse["message"][i]["Meeting Time"])
+        results.push(jsonResponse["message"][i]["Course"] + " " + jsonResponse["message"][i]["Title"]
+        + " " + jsonResponse["message"][i]["Instructor"] + " " + jsonResponse["message"][i]["Meeting Time"])
       }
-      const cleanedResults = results.map((text) => <p>{text}</p>);
-      this.setState({data: cleanedResults})
-      console.log(this.state.data)
+      this.setState({data: results.map((text) => <p>{text}</p>)})
     })
   }
 
