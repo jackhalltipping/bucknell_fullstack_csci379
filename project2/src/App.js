@@ -45,6 +45,9 @@ class App extends Component {
       <h1> Bucknell Course Information 2.0 </h1>
       <TextField value={this.state.text} onKeyUp={this.search} onChange={this.searchUpdate} hintText="Enter Course Information"/>
       {this.state.data}
+      <div class="footer">
+        <p><a href="https://jackhalltipping.github.io/bucknell_fullstack_csci379/">Home</a></p>
+      </div>
       </div>
     );
   }
