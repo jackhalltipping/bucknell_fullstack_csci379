@@ -5,7 +5,7 @@ import './App.css';
 import ReactDOM from 'react-dom';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Results from './Results.jsx';
+
 
 class App extends Component {
 
@@ -20,20 +20,21 @@ class App extends Component {
   }
 
   search() {
-    return fetch("https://www.eg.bucknell.edu/~amm042/service/q?text="+ this.state.text)
-    .then((response) => response.json())
-    .then((response) => {
-      console.log(response)
-      console.log(response.message[0].Course)
-      console.log(response.message[0].Instructor)
-      return response.message;
+    return fetch("https://www.eg.bucknell.edu/~amm042/service/q?limit=10&text="+ this.state.text)
+    .then(response => {
+      var json = response.json()
+      return json
     })
-    .then((response) => {
-      this.setState({data:response})
+    .then(jsonResponse => {
+      var results = []
+      for (var i = 0; i < jsonResponse["message"].length;  i += 1) {
+        results.push(jsonResponse["message"][i]["Course"] +jsonResponse["message"][i]["Title"]
+        + jsonResponse["message"][i]["Instructor"] + jsonResponse["message"][i]["Meeting Time"])
+      }
+      const cleanedResults = results.map((text) => <p>{text}</p>);
+      this.setState({data: cleanedResults})
+      console.log(this.state.data)
     })
-    .catch((error) => {
-      console.error(error);
-    });
   }
 
   searchUpdate(e, t) {
@@ -43,8 +44,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+      <h1> Bucknell Course Information 2.0 </h1>
       <TextField value={this.state.text} onKeyUp={this.search} onChange={this.searchUpdate} hintText="Enter Course Information"/>
-      <Results temp={this.state.data}/>
+      {this.state.data}
       </div>
     );
   }
